@@ -17,11 +17,12 @@ Advice:
 
 There is no automated checking on this one
 """
+shopping_list=[]
 while True:
-
+    shopping_list.append(input =
     elif input = ("done"):
         print(shopping_list[:])
         break
 
 
-shopping_list = []
+
