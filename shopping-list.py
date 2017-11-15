@@ -17,5 +17,11 @@ Advice:
 
 There is no automated checking on this one
 """
+while True:
+
+    elif input = ("done"):
+        print(shopping_list[:])
+        break
+
 
 shopping_list = []

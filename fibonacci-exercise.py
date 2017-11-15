@@ -11,7 +11,6 @@ the first 50 terms of the fibonacci sequence, starting with 0
 """
 
 fib = [0, 1]
-
 # TIP: How can you refer to the last item in a list? Print the last item in the list called fib
 
 # TIP: How about the second to last item?
@@ -21,6 +20,10 @@ fib = [0, 1]
 # TIP: Now that you've figured out how to generate the next item in your sequence, how would you add it to the end of your list
 
 # TIP: You've gotten the next item in the sequence and added it to your list - now how do you repeat it?
+x = fib[0]
+for x in range(48):
+    fib.append(fib[-1] + fib[-2])
+
 # There are two good options based on your current knowledge - you could repeat a certain number of times (what type of loop is that?)
 # or you could repeat as long as there are too few items in the list (what type of loop is that?)
 # You might want to refresh your memory by creating a simple loop of the type you want first
@@ -62,3 +65,6 @@ def test_contents(student_results):
         else:
             print(f"Term at index{n} is incorrect. You have {fib[n]} and I have {fibonacci_results[n]}")
             is_correct = False
+
+test_length(fib)
+test_contents(fib)
